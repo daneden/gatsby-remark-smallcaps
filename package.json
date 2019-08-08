@@ -1,0 +1,31 @@
+{
+  "name": "gatsby-remark-smallcaps",
+  "version": "1.0.0",
+  "description": "Wraps strings of capital letters in a span tag, ready for styling",
+  "main": "index.js",
+  "repository": "https://github.com/daneden/gatsby-remark-smallcaps",
+  "author": "Daniel Eden <dan.eden@me.com>",
+  "license": "MIT",
+  "private": false,
+  "bugs": {
+    "url": "https://github.com/daneden/gatsby-remark-smallcaps/issues"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.26.0",
+    "unist-util-visit": "^1.1.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "cross-env": "^5.0.5"
+  },
+  "homepage": "https://github.com/daneden/gatsby-remark-smallcaps#readme",
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin"
+  ],
+  "scripts": {
+    "build": "babel src --out-dir . --ignore __tests__",
+    "prepublish": "cross-env NODE_ENV=production npm run build",
+    "watch": "babel -w src --out-dir . --ignore __tests__"
+  }
+}
