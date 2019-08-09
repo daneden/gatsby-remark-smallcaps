@@ -1,6 +1,6 @@
 const visit = require("unist-util-visit");
 
-const CAPS_RE = /([A-Z]{2,})/g;
+const CAPS_RE = /([A-Z!"#$%&'()*+,./:;<=>?@\^_`{|}~\-]{2,}\b)/g;
 
 module.exports = ({ markdownAST }, pluginOptions = {}) => {
   visit(markdownAST, `text`, node => {
