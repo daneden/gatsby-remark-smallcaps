@@ -1,6 +1,6 @@
 {
   "name": "gatsby-remark-smallcaps",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Wraps strings of capital letters in a span tag, ready for styling",
   "main": "index.js",
   "repository": "https://github.com/daneden/gatsby-remark-smallcaps",
